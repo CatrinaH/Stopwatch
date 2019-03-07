@@ -27,8 +27,8 @@ public class StopwatchActivity extends Activity {
             savedInstanceState.putBoolean("wasRunning", wasRunning);
         }
     @Override
-    protected void onStop() {
-        super.onStop();
+    protected void onPause() {
+        super.onPause();
         wasRunning = running;
         running = false;
     }
