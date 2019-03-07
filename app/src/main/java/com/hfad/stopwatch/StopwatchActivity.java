@@ -33,8 +33,8 @@ public class StopwatchActivity extends Activity {
         running = false;
     }
     @Override
-    protected void onStart() {
-        super.onStart();
+    protected void onResume() {
+        super.onResume();
         if (wasRunning) {
             running = true;
         }
